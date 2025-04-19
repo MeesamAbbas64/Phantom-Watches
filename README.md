@@ -10,6 +10,137 @@
   <link rel="stylesheet" href="../CSS/filter.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../CSS/animation.css">
+  <style>
+    *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: arial, Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: #F1EFEC;
+}
+.header{
+    background-color: #030303;
+    height: 175px;
+    width: auto;
+    display: block;
+}
+#logo{
+    text-transform: capitalize;
+    text-align: center;
+    color: #ffffff; 
+    font-size: 85px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',sans-serif;
+}
+.dropdown-btn {
+    position: relative;
+    left: 15px;
+    top: 4px;
+    background-color: transparent;
+    color: whitesmoke; 
+    padding: 13px 13px 13px 13px;
+    font-size: 30px;
+    border-radius: 10px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+} 
+.dropdown {
+    position: relative;
+    display: inline-block;
+} 
+.navigation {
+    display: none;
+    top: 0;
+    position: absolute;
+    top: 61px;
+    background-color: #F9F9F9; 
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.navigation a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff; 
+    border: 1.5px solid #ccc; 
+    padding: 0 10px;
+    border-radius: 18px;
+    margin-top: 15px;
+    width: 400px;
+    height: 40px;
+    overflow: hidden;
+    position: sticky;
+    left: 500px;
+    top: 0;
+    z-index: 100;
+} 
+#search-bar {
+    flex-grow: 2;
+    border: none; 
+    background-color: #ffffff; 
+    padding-left: 10px;
+    outline: none;
+    font-size: 14px;
+} 
+#search-button {
+    background-color: #f2f2f2;  
+    font-size: 18px;
+    padding: 0 15px;
+    border: none;
+    border-left: 1px solid #ccc; 
+    cursor: pointer;
+}
+.section1{
+    background-color: #F1EFEC; 
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    left: 30px;
+}
+.watches{
+    width: 200px;
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 34px;
+    border: 2px solid #A8A8A8; 
+    box-shadow: 5px 4px 2px rgba(168,168,168,0.6); 
+}
+.p-watch{
+    height: 70px;
+    line-height: 1.26em;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-y: scroll;
+}
+.img-watch{
+    height: 140px;
+    width: 100%;
+}
+.oprice{
+    font-family: Roboto, 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+    font-size: 1.25em;
+    font-weight: 600;
+    text-decoration: underline rgb(10, 9, 10);
+    text-underline-offset: -0.38em;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: 0.1em;
+    color: rgba(39, 39, 39, 0.7); 
+}
+.rprice{
+    font-family: Roboto, 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+    font-size: 1.25em;
+    font-weight: 600;
+}
+  </style>
 </head>
 <body>
   <header>
